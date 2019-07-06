@@ -1,8 +1,8 @@
+# Mensa の申込状況の確認
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import requests
 import re
-# Mensa の申込状況の確認
 
 page = requests.get("https://mensa.jp/exam/")
 bs = BeautifulSoup(page.content, 'html.parser')
